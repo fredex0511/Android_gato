@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     botonpresionado.setText("0");
                     turno = 0;
                 }
+                botonpresionado.setEnabled(false);
             }
         };
 
