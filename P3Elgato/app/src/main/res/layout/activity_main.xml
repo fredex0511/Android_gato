@@ -16,13 +16,53 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <!--Jugadores-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/gris">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jugador 1(X):"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/amarillo"/>
+
+            <TextView
+                android:id="@+id/ganadas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/verde"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jugador 2 (O):"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="90dp"
+                android:textColor="@color/amarillo"/>
+
+            <TextView
+                android:id="@+id/ganadas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/verde"/>
 
         </LinearLayout>
+
+
         <!--TABLERO-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,18 +83,24 @@
 
                 <TextView
                     android:id="@+id/btn1"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3" />
 
                 <TextView
                     android:id="@+id/btn2"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
 
                 <TextView
                     android:id="@+id/btn3"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
@@ -70,18 +116,24 @@
 
                 <TextView
                     android:id="@+id/btn4"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3" />
 
                 <TextView
                     android:id="@+id/btn5"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
 
                 <TextView
                     android:id="@+id/btn6"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
@@ -97,25 +149,55 @@
 
                 <TextView
                     android:id="@+id/btn7"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
 
                 <TextView
                     android:id="@+id/btn8"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
 
                 <TextView
                     android:id="@+id/btn9"
+                    android:gravity="center"
+                    android:textSize="100sp"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="3"/>
 
             </LinearLayout>
 
+
         </LinearLayout>
+
+        <!--Ganador-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El ganador es : "
+                android:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/blanco"/>
+
+            <TextView
+                android:id="@+id/ganadorg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/blanco"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
